@@ -4,4 +4,8 @@ const getHomes = (state) => {
   return state[NameSpace.HOMES].homes;
 };
 
-export {getHomes};
+const getCardCount = (state) => {
+  return state[NameSpace.HOMES].cardCount;
+};
+
+export {getHomes, getCardCount};

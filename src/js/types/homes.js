@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const homes = PropTypes.shape({
+export const homeDetails = PropTypes.shape({
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,

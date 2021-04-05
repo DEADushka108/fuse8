@@ -1,18 +1,16 @@
 import React, {Fragment} from 'react';
-// import PropTypes from 'prop-types';
+import Homes from '../homes/homes';
 
 const Main = () => {
 
   return <Fragment>
     <main className="page-main">
-      <h1>Homes</h1>
+      <h1 className="visually-hidden">Homes</h1>
 
+      <Homes/>
     </main>
 
   </Fragment>;
-};
-
-Main.propTypes = {
 };
 
 export default Main;
