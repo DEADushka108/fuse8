@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import Filter from '../filter/filter';
 import HomesList from '../homes-list/homes-list';
-import {getCardCount, getHomes} from '../../store/homes/selector';
+import {getCardCount, getFilteredHomesList} from '../../store/homes/selector';
 import {connect} from 'react-redux';
 import {homeDetails} from '../../types/homes';
 import SeeMoreButton from '../see-more-button/see-more-button';
@@ -30,7 +30,7 @@ Homes.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  homes: getHomes(state),
+  homes: getFilteredHomesList(state),
   count: getCardCount(state),
 });
 

@@ -1,10 +1,10 @@
-import {MAX_CARD_COUNT, Url} from '../../utils/const';
+import {FILTER_DEFAULT_VALUE, MAX_CARD_COUNT, Url} from '../../utils/const';
 import {extend} from '../../utils/utils';
 
 const initialState = {
   homes: [],
   cardCount: MAX_CARD_COUNT,
-  filter: ``,
+  filter: FILTER_DEFAULT_VALUE,
 };
 
 const ActionType = {

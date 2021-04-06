@@ -1,13 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {AppRoute, TypeColor} from '../../utils/const';
 import {Link} from 'react-router-dom';
 import {homeDetails} from '../../types/homes';
+import {redirectToRoute} from '../../store/redirect/redirect';
+import {connect} from 'react-redux';
 
 const SmallCard = (props) => {
-  const {home} = props;
+  const {home, onHomeCardClick} = props;
   const {id, title, address, type, price} = home;
 
-  return <article className="homes__small-card small-card">
+  return <article className="homes__small-card small-card" onClick={() => {
+    onHomeCardClick(`${AppRoute.HOME}/${id}`);
+  }}>
     <div className="small-card__image">
       <img src={`https://via.placeholder.com/377x227.png?text=${title}`}/>
       <p className="small-card__type" style={type === `IndependentLiving` ? {background: TypeColor.INDEPENDENTD_LIVING} : {background: TypeColor.SUPPORT_AVAILABLE}}>{type}</p>
@@ -28,6 +33,14 @@ const SmallCard = (props) => {
 
 SmallCard.propTypes = {
   home: homeDetails,
+  onHomeCardClick: PropTypes.func.isRequired,
 };
 
-export default SmallCard;
+const mapDispatchToProps = (dispatch) => ({
+  onHomeCardClick(route) {
+    dispatch(redirectToRoute(route));
+  },
+});
+
+export {SmallCard};
+export default connect(null, mapDispatchToProps)(SmallCard);

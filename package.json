@@ -29,8 +29,6 @@
   "dependencies": {
     "axios": "0.21.1",
     "history": "4.10.1",
-    "moment": "2.29.1",
-    "moment-locales-webpack-plugin": "1.2.0",
     "prop-types": "15.7.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
@@ -38,7 +36,8 @@
     "react-router-dom": "5.2.0",
     "redux": "4.0.5",
     "redux-devtools-extension": "2.13.9",
-    "redux-thunk": "2.3.0"
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.13.8",

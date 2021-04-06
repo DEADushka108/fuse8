@@ -3,6 +3,11 @@
   margin-right: 10px;
   margin-bottom: 38px;
   border: 1px solid $border-black;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .small-card__image {
@@ -19,8 +24,8 @@
   padding: 8px 11px 5px 10px;
   font-size: 12px;
   font-weight: 700;
-  color: $text-white;  
-  background-color: #006F79;
+  color: $text-white;
+  background-color: #006f79;
 }
 
 .small-card__wrapper {
