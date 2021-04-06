@@ -9,6 +9,8 @@ Thumbs.db
 
 # Вспомогательные файлы
 *.log*
+*.github*
+.firebase
 node_modules/
 
 # Файлы сборки

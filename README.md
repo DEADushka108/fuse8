@@ -4,6 +4,8 @@
 
 ### Mail: <aakuznetsov.mgn@gmail.com>
 
+##[Firebase version](https://fuse8-test-61e9a.web.app/)
+
 All you need to do is fork this repository to you PC and run follow command:
 
 ---
