@@ -1,0 +1,65 @@
+.homes {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+
+.homes__title {
+  text-align: center;
+  margin-right: 21px;
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: 700;
+  color: $text-green;
+}
+
+.homes__filter {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  margin-left: 11px;
+  margin-top: 11px;
+  margin-bottom: 45px;
+  min-width: 380px;
+  max-width: 474px;
+}
+
+.homes__label {
+  font-weight: 700;
+  margin-right: 16px;
+}
+
+.homes__input {
+  flex-grow: 1;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid $border-black;
+}
+
+.homes__catalog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.homes__button {
+  align-self: center;
+  min-width: 150px;
+  height: 50px;
+  margin-top: 23px;
+  margin-right: 22px;
+  border: 1px solid $border-black;
+  border-radius: 25px;
+  font-weight: 700;
+  background-color: $bg-white;
+}
+
+.homes__icon-right {
+  position: relative;
+  left: 5px;
+  top: 2px;
+}

@@ -1,0 +1,62 @@
+.small-card {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 38px;
+  border: 1px solid $border-black;
+}
+
+.small-card__image {
+  position: relative;
+  margin: 0;
+}
+
+.small-card__type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 8px 11px 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $text-white;  
+  background-color: #006F79;
+}
+
+.small-card__wrapper {
+  margin-left: 19px;
+  margin-right: 20px;
+}
+
+.small-card__wrapper > p {
+  margin: 0;
+  padding: 0;
+}
+
+.small-card__title {
+  margin-bottom: 10px;
+  margin-top: 19px;
+}
+
+.small-card__link {
+  text-decoration: none;
+  color: $text-black;
+  letter-spacing: 0.7px;
+}
+
+.small-card .small-card__address {
+  padding-bottom: 18px;
+}
+
+.small-card__price-amount {
+  font-weight: 700;
+}
+
+.small-card .small-card__price {
+  padding-bottom: 8px;
+}
+
+.small-card .small-card__remark {
+  font-size: 14px;
+  padding-bottom: 16px;
+}

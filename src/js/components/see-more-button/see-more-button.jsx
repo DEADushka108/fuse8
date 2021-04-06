@@ -9,7 +9,7 @@ const SeeMoreButton = (props) => {
 
   return (count < list.length) ? <button className="homes__button" type="button" onClick={onClick}>
     See more
-    <svg className="homes__icon-right" width="4" height="15">
+    <svg className="homes__icon-right" width="7" height="17">
       <use xlinkHref="#arrow-right"></use>
     </svg>
   </button> : null;

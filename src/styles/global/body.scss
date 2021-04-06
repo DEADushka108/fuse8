@@ -1,13 +1,14 @@
 body {
   padding: 0;
-  margin: 0;
-  min-width: 1366px;
+  margin: 0 auto;
+  min-width: 420px;
+  max-width: 1280px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   font-stretch: normal;
   letter-spacing: normal;
-  color: $text-light-black;
+  color: $text-black;
   background-color: $bg-white;
 }
