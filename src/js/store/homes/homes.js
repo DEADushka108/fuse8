@@ -4,11 +4,13 @@ import {extend} from '../../utils/utils';
 const initialState = {
   homes: [],
   cardCount: MAX_CARD_COUNT,
+  filter: ``,
 };
 
 const ActionType = {
   LOAD_HOMES: `LOAD_HOMES`,
   SET_CARD_COUNT: `SET_CARD_COUNT`,
+  SET_FILTER: `SET_FILTER`,
 };
 
 const ActionCreator = {
@@ -20,6 +22,10 @@ const ActionCreator = {
     type: ActionType.SET_CARD_COUNT,
     payload: MAX_CARD_COUNT
   }),
+  setFilter: (searchWord) => ({
+    type: ActionType.SET_FILTER,
+    payload: searchWord,
+  })
 };
 
 const Operation = {
@@ -40,6 +46,10 @@ const reducer = (state = initialState, action) => {
     case ActionType.SET_CARD_COUNT:
       return extend(state, {
         cardCount: state.cardCount + action.payload,
+      });
+    case ActionType.SET_FILTER:
+      return extend(state, {
+        filter: action.payload,
       });
   }
   return state;
