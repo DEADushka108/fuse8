@@ -14,7 +14,7 @@ const SmallCard = (props) => {
     onHomeCardClick(`${AppRoute.HOME}/${id}`);
   }}>
     <div className="small-card__image">
-      <img src={`https://via.placeholder.com/377x227.png?text=${title}`}/>
+      <img src={`https://via.placeholder.com/377x227.png?text=${title}`} alt={title}/>
       <p className="small-card__type" style={type === `IndependentLiving` ? {background: TypeColor.INDEPENDENTD_LIVING} : {background: TypeColor.SUPPORT_AVAILABLE}}>{type}</p>
     </div>
     <div className="small-card__wrapper">
